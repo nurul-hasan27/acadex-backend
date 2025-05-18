@@ -10,6 +10,7 @@ app.get("/",(req,res)=>{
     res.json({
         message: "App is running on the docker",
     });
+    console.log("hello world");
 });
 
 app.listen(PORT, ()=>{
