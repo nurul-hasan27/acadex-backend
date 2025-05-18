@@ -15,4 +15,5 @@ docker run -d -p 3000:3000 -v $(pwd):/app --name acadex-backend hasan27/acadex-b
 
 #include the .env file in the docker
 docker run -d -p 3000:3000 -v $(pwd):/app --env-file ./.env --name acadex-backend hasan27/acadex-backend:0.0.1.RELEASE
+
 # git-acadex-backend

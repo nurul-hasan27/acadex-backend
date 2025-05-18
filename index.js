@@ -8,7 +8,7 @@ const app = express();
 
 app.get("/",(req,res)=>{
     res.json({
-        message: "App is running on the docker container ",
+        message: "App is running on the docker",
     });
 });
 
