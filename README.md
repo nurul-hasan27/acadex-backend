@@ -1,19 +1,20 @@
-#command to make the image
-docker build . -t hasan27/acadex-backend:0.0.1.RELEASE
+# Acadex Backend
 
-#command to run the docker image
-docker run -d 3000:3000 hasan27/acadex-backend:0.0.1.RELEASE
+This repository provides the backend service for the Acadex platform. The application is containerized with Docker and can be easily pulled and run using the instructions below.
 
-#stop the container
-docker stop <id>
+---
 
-#start the container
-docker start <id>
+## 🐳 Pull the Docker Image from Docker Hub
 
-#mount volume to the container (any local changes would be reflect locally)
+Run the following command in your terminal:
+
+```bash
+docker pull hasan27/acadex-backend
+```
+
+## run the backend container, use the following command:
+
+```bash
 docker run -d -p 3000:3000 -v $(pwd):/app --name acadex-backend hasan27/acadex-backend:0.0.1.RELEASE
+```
 
-#include the .env file in the docker
-docker run -d -p 3000:3000 -v $(pwd):/app --env-file ./.env --name acadex-backend hasan27/acadex-backend:0.0.1.RELEASE
-
-# git-acadex-backend

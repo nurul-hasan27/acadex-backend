@@ -1,0 +1,1 @@
+this is just the file to check the google authentication, and not to be included in the frontend
